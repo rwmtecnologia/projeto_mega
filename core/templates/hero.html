@@ -1,0 +1,9 @@
+{% load static %}
+{% for t in topos %}
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>{{ t.titulo_banner }}</h1>
+      <p>Trabalhamos com as linhas <span class="typed" data-typed-items="{{ t.descricao_banner }}"></span></p>
+    </div>
+{% endfor %}
+  </section>

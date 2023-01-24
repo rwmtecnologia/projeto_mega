@@ -1,0 +1,35 @@
+
+{% load static %}
+<!--
+<section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Dicas</h2>
+          <p></p>
+        </div>
+        {% for d in dicas %}
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{{ p.imagem.thumb.url }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" align="center">
+            <center><h3>{{ d.titulo_dica}}</h3></center>
+            <center><p class="fst-italic">
+              {{ d.descricao_dica }}
+            </p></center>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Autor:</strong> <span>{{ d.Autor_dica }}</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
